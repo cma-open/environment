@@ -2,7 +2,9 @@
 
 name: projects-env
 channels:
- - conda-forge
+  # make sure conda-main is not listed here (MO-L)
+  - conda-forge
+  - nodefaults
 dependencies:
  # core / build
  - python >= 3.11
